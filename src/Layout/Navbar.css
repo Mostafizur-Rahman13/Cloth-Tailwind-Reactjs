@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .nav-menu {
+    display: none;
+    gap: 20px;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    top: 70px;
+    padding-bottom: 80px;
+
+  }
+
+  .nav-menu-visible {
+    display: flex;
+
+  }
+
+  .open {
+    /* transform: rotate(180deg);
+    transition-duration: 0.3s; */
+    animation: logo-spin infinite 0.6s linear;
+  }
+
+
+
+}
