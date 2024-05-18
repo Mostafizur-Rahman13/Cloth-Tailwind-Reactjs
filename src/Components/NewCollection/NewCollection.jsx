@@ -4,11 +4,12 @@ import Item from '../Item/Item'
 
 const NewCollection = () => {
   return (
-    <div className='new-collections h-5/6 md:flex flex-col items-center gap:[10px] mt-10 mb-8'>
-      <h1 className='text-[#171717] font-medium text-5xl'>NEW COLLECTIONS</h1>
+    <div className='new-collections h-5/6 flex flex-col items-center md:gap-1.5 lg:gap-2.5 mt-10 mb-8'>
+      <h1 className='text-[#171717]  text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium'>NEW COLLECTIONS</h1>
 
-      <hr className='w-[200px] h-[6px] mt-4 rounded-md bg-[#252525]' />
-      <div className="collections mt-5 md:grid grid-cols-4 gap-12 ">
+      <hr className='w-20 md:w-40 lg:w-48 xl:w-52 h-0.5 md:h-1 xl:h-1.5 mt-4 rounded-md bg-[#252525]' />
+
+      <div className="collections mt-5 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-1.5 lg:gap-5 xl:gap-8">
 
         {new_collection.map((item) => {
 

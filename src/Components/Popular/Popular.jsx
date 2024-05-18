@@ -5,14 +5,13 @@ import Item from '../Item/Item'
 
 const Popular = () => {
   return (
-    <div
+    <div className='new-collections h-5/6 flex flex-col items-center md:gap-1.5 lg:gap-2.5 mt-10 mb-8'>
+      <h1 className='text-[#171717]  text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium'>PREMIUM IN WOMAN</h1>
 
-      className='popular h-[90vh] md:h-[66vh] lg:h-[70vh] xl:h-5/6 flex flex-col items-center md:gap-[6px] lg:gap:[10px]'>
+      <hr className='w-20 md:w-40 lg:w-48 xl:w-52 h-0.5 md:h-1 xl:h-1.5 mt-4 rounded-md bg-[#252525]' />
 
-      <h1 className='text-[#171717] md:text-xl lg:text-4xl xl:text-5xl font-medium '>POPULAR IN WOMEN</h1>
+      <div className="collections mt-5 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-1.5 lg:gap-5 xl:gap-8">
 
-      {/* <hr className='lg:w-40 xl:w-52 xl:h-2 lg:mt-0 xl:mt-4 rounded-md bg-[#252525]' /> */}
-      <div className="popular-item mb-4 md:mt-3 md:mb-4 lg:mt-4 lg:mb-5 xl:mt-10 xl:mb-20 grid grid-cols-2 gap-5 md:flex md:gap-1.5 lg:gap-5 xl:gap-8">
         {
 
           data_product.map((item) => {
