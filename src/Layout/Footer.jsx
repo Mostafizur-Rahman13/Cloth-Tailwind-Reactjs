@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <div className="footer mx-auto">
         <hr className='h-0.5 bg-slate-500' />
-        <div className='footer-item grid grid-cols-[1fr_1fr]  md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr_1fr] justify-between mx-auto  list-none pb-10 lg:gap-5 xl:gap-10 bg-[#FFFFFF]'>
+        <div className='footer-item grid grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr_1fr] justify-between mx-auto  list-none pb-10 lg:gap-5 xl:gap-10 bg-[#FFFFFF]'>
 
           <div className='flex flex-col md:ml-10'>
             <h2 className='mt-[20px] font-semibold text-lg '>Legal</h2>
@@ -66,8 +66,8 @@ const Footer = () => {
           <div className='flex flex-col md:ml-0'>
             <h2 className='mt-5 font-semibold text-lg'>Service Center</h2>
             <ul className='flex flex-col mt-4 gap-2.5'>
-              <li className='text-[#828282] hover:text-[#2F2F2F] cursor-pointer'>0987654321</li>
-              <li className='text-[#828282] hover:text-[#2F2F2F] cursor-pointer'>unique@info.com</li>
+              <li className='text-[#828282] hover:text-[#2F2F2F] cursor-pointer'>01971334863</li>
+              <li className='text-[#828282] hover:text-[#2F2F2F] cursor-pointer'>mostafiztarek@gmail.com</li>
             </ul>
           </div >
         </div >

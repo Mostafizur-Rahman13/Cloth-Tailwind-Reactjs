@@ -11,27 +11,27 @@ const ProductDisplay = ({ product }) => {
 
   return (
     <div className='main-product-display'>
-      <div className="product-display my-4 flex justify-center">
+      <div className="product-display my-4 flex flex-col mt-0 gap-4 md:flex-row justify-center">
 
-        <div className="product-display-left border-[1px] p-2 lg:p-2 xl:p-4 flex gap-2 lg:gap-2.5 xl:gap-4">
+        <div className="product-display-left md:w-3/6 border-[1px] p-2 lg:p-2 xl:p-4 flex gap-2 lg:gap-2.5 xl:gap-4">
 
           <div className="product-display-img-list border-[1px] p-1 xl:p-2 flex flex-col gap-2.5 lg:gap-2.5 xl:gap-4">
-            <img className='w-[100px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
-            <img className='w-[100px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
-            <img className='w-[100px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
-            <img className='w-[100px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
+            <img className='w-[120px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
+            <img className='w-[120px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
+            <img className='w-[120px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
+            <img className='w-[120px] lg:w-[144px] xl:w-[160px] hover:border-[1px] hover:border-red-600' src={image} alt="" />
           </div>
 
-          <div className="product-display-img ">
-            <img className='product-display-main-img lg:h-[440px] lg:w-[600px] xl:w-[700px] xl:h-[553px]' src={image} alt="" />
+          <div className="product-display-img">
+            <img className='product-display-main-img h-[330px] w-[500px] lg:h-[440px] lg:w-[600px] xl:w-[700px] xl:h-[535px]' src={image} alt="" />
           </div>
         </div>
 
-        <div className="product-display-right p-2 lg:p-2 xl:p-4 flex flex-col">
+        <div className="product-display-right md:w-3/6 p-2 lg:p-2 xl:p-4 flex flex-col">
 
-          <h1 className='text-xl lg:text-xl xl:text-3xl font-medium '>{name}</h1>
+          <h1 className='text-base lg:text-xl xl:text-3xl font-medium '>{name}</h1>
 
-          <div className="product-display-right-star my-2 flex items-center gap-1 text-[#1c1c1c] ">
+          <div className="product-display-right-star text-xs md:text-sm lg:text-lg xl:text-xl md:my-1 lg:my-2 flex items-center gap-1 text-[#1c1c1c] ">
             <img src={star_icon} alt="" />
             <img src={star_icon} alt="" />
             <img src={star_icon} alt="" />
@@ -40,9 +40,9 @@ const ProductDisplay = ({ product }) => {
             <p>(122)</p>
           </div>
 
-          <div className="product-display-right-prices lg:my-3 xl:my-5 flex lg:gap-3 xl:gap-4 lg:text-2xl xl:text-3xl font-medium ">
+          <div className="product-display-right-prices my-2 lg:my-3 xl:my-5 flex gap-2 lg:gap-3 xl:gap-4 lg:text-2xl xl:text-3xl font-medium ">
 
-            <div className="product-display-right-price-old line-through text-[#818181]">
+            <div className="product-display-right-price-old line-through text-[#818181bc]">
               ${old_price}
             </div>
 
@@ -53,31 +53,36 @@ const ProductDisplay = ({ product }) => {
           </div>
 
           <div className="product-display-right-size">
-            <h1 className='lg:text-xl xl:text-2xl text-[#656565] font-semibold text-center'>Select Size</h1>
+            <h1 className='text-base lg:text-xl xl:text-2xl text-[#656565] font-semibold '>Select Size</h1>
           </div>
 
-          <div className="product-display-right-size border-y-2 py-1 flex gap-2 justify-center">
+          <div className="product-display-right-size py-0.5 lg:py-1 flex gap-1 lg:gap-2 text-xs lg:text-base xl:text-lg">
 
-            <div className=' cursor-pointer py-1 px-2.5  lg:py-1 lg:px-2.5 xl:py-2 xl:px-4 hover:rounded-sm hover:text-white hover:ring-yellow-600 hover:bg-indigo-700 hover:shadow-md hover:shadow-red-600'>S</div>
-            <div className=' cursor-pointer py-1 px-2.5 lg:py-1 lg:px-2.5 xl:py-2 xl:px-4 hover:rounded-sm hover:text-white hover:ring-yellow-600 hover:bg-indigo-700 hover:shadow-md hover:shadow-red-600'>M</div>
-            <div className=' cursor-pointer py-1 px-2.5  lg:py-1 lg:px-2.5 xl:py-2 xl:px-4 hover:rounded-sm hover:text-white hover:ring-yellow-600 hover:bg-indigo-700 hover:shadow-md hover:shadow-red-600'>L</div>
-            <div className=' cursor-pointer py-1 px-2.5 lg:py-1 lg:px-2.5 xl:py-2 xl:px-4 hover:rounded-sm hover:text-white hover:ring-yellow-600 hover:bg-indigo-700 hover:shadow-md hover:shadow-red-600'>XL</div>
-            <div className=' cursor-pointer py-1 px-2.5 lg:py-1 lg:px-2.5 xl:py-2 xl:px-4 hover:rounded-sm hover:text-white hover:ring-yellow-600 hover:bg-indigo-700 hover:shadow-md hover:shadow-red-600'>XXL</div>
+            <div className='size-responsive size-hover'>S</div>
+            <div className='size-responsive size-hover'>M</div>
+            <div className='size-responsive size-hover'>L</div>
+            <div className='size-responsive size-hover'>XL</div>
+            <div className='size-responsive size-hover'>XXL</div>
 
           </div>
 
-          <div className='flex justify-center'>
+          <div className='flex'>
 
-            <button onClick={() => { addToCart(id) }} className='w-42 lg:w-42 xl:w-52 my-3.5  lg:my-3.5 xl:my-5 rounded-xl lg:rounded-2xl xl:rounded-lg text-xs lg:text-xs xl:text-base bg-red-700 hover:bg-red-600  text-white  font-semibold px-10 py-2.5 border-none outline-none cursor-pointer'>ADD TO BAG</button>
+            <button onClick={() => { addToCart(id) }} className='w-36 lg:w-48 xl:w-80 my-3  lg:my-4 xl:my-5 rounded-md text-xs xl:text-lg bg-[#C21E56] hover:bg-[#c21e55e9]  text-white font-semibold px-4 py-2.5 lg:px-8  lg:py-3 xl:py-4 text-center border-none outline-none cursor-pointer'>ADD TO BAG</button>
           </div>
 
-          <div className="product-display-right-description my-5">
+          <div className="product-display-right-description flex flex-col text-xs lg:text-base xl:text-lg gap-2 my-1 lg:my-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque voluptatum consectetur adipisicing elit.
+
+            <p className='product-display-right-category'> <span className='font-semibold'>Category : </span>Woman,T-shirt, Crop-Top</p>
+
+            <p className='product-display-right-category'> <span className='font-semibold'>Tags : </span> Modern, Tranding, Latest</p>
+
           </div>
 
-          <p className='product-display-right-category mt-2 '> <span className='font-semibold'>Category : </span>Woman,T-shirt, Crop-Top</p>
+          {/* <p className='product-display-right-category md:my-1 lg:my-2 '> <span className='font-semibold'>Category : </span>Woman,T-shirt, Crop-Top</p>
 
-          <p className='product-display-right-category mt-2 '> <span className='font-semibold'>Tags : </span> Modern, Tranding, Latest</p>
+          <p className='product-display-right-category'> <span className='font-semibold'>Tags : </span> Modern, Tranding, Latest</p> */}
         </div>
       </div >
     </div >

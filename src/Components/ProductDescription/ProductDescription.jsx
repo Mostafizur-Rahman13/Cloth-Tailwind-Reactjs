@@ -4,7 +4,7 @@ const ProductDescription = () => {
 
   return (
 
-    <div className='description-box my-10 mx-10'>
+    <div className='description-box'>
 
       <div className='description-navigator flex'>
         <div className="description-box-nav-box text-base flex justify-center align-center border-[1px] py-3 px-5">Description</div>
