@@ -56,7 +56,7 @@ const ProductDisplay = ({ product }) => {
             <h1 className='text-base lg:text-xl xl:text-2xl text-[#656565] font-semibold '>Select Size</h1>
           </div>
 
-          <div className="product-display-right-size py-0.5 lg:py-1 flex gap-1 lg:gap-2 text-xs lg:text-base xl:text-lg">
+          <div className="product-display-right-size py-0.5 lg:py-1 flex gap-1 lg:gap-2 text-base xl:text-lg">
 
             <div className='size-responsive size-hover'>S</div>
             <div className='size-responsive size-hover'>M</div>
