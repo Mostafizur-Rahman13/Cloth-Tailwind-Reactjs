@@ -6,7 +6,7 @@ import Item from '../Item/Item'
 const Popular = () => {
   return (
     <div className='new-collections h-5/6 flex flex-col items-center md:gap-1.5 lg:gap-2.5 mt-10 mb-8'>
-      <h1 className='text-[#171717]  text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium'>PREMIUM IN WOMAN</h1>
+      <h1 className='text-[#171717]  text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium'>COMFY DRESS FOR WOMAN</h1>
 
       <hr className='w-20 md:w-40 lg:w-48 xl:w-52 h-0.5 md:h-1 xl:h-1.5 mt-4 rounded-md bg-[#252525]' />
 
