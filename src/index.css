@@ -22,6 +22,14 @@
     @apply text-base grid items-center justify-items-center grid-cols-[0.5fr_0.5fr_0.5fr_0.5fr_0.5fr_0.5fr] md:grid-cols-[0.5fr_2fr_0.5fr_0.5fr_0.5fr_0.5fr] xl:grid-cols-[0.5fr_1fr_1fr_1fr_1fr_1fr]
   }
 
+  .login-input {
+    @apply p-2 border-[1px] rounded-lg border-gray-600 hover:ring-1;
+  }
+
+  .login-onclick {
+    @apply text-base text-red-700 font-semibold;
+  }
+
 }
 
 
