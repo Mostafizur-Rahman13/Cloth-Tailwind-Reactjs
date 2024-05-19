@@ -40,7 +40,7 @@ const ProductDisplay = ({ product }) => {
             <p>(122)</p>
           </div>
 
-          <div className="product-display-right-prices my-2 lg:my-3 xl:my-5 flex gap-2 lg:gap-3 xl:gap-4 lg:text-2xl xl:text-3xl font-medium ">
+          <div className="product-display-right-prices my-2 lg:my-3 xl:my-5 flex gap-3 xl:gap-4 text-xl lg:text-2xl xl:text-3xl font-semibold ">
 
             <div className="product-display-right-price-old line-through text-[#818181bc]">
               ${old_price}

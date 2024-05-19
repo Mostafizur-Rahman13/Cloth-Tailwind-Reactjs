@@ -12,7 +12,7 @@ const Cart = () => {
   return (
     <div className='cartitems '>
       <div className="cart-itemm ">
-        <div className="cartitems-format-main my-3  gap-1 text-[#555] cart-responsive ">
+        <div className="cartitems-format-main my-3 mt-8  gap-1 text-[#555] cart-responsive ">
           <p>Items</p>
           <p>Title</p>
           <p>Price</p>
