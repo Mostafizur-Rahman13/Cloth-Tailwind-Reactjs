@@ -53,10 +53,10 @@ const ProductDisplay = ({ product }) => {
           </div>
 
           <div className="product-display-right-size">
-            <h1 className='text-base lg:text-xl xl:text-2xl text-[#656565] font-semibold '>Select Size</h1>
+            <h1 className='text-lg lg:text-xl xl:text-2xl text-[#656565] font-semibold '>Select Size</h1>
           </div>
 
-          <div className="product-display-right-size px-1 py-1 flex gap-4 text-base xl:text-lg">
+          <div className="product-display-right-size py-1 flex gap-4 text-base xl:text-lg">
 
             <div className='size-responsive size-hover'>S</div>
             <div className='size-responsive size-hover'>M</div>
@@ -68,7 +68,7 @@ const ProductDisplay = ({ product }) => {
 
           <div className='flex'>
 
-            <button onClick={() => { addToCart(id) }} className='w-48 xl:w-80 my-3  lg:my-4 xl:my-5 rounded-md text-xs xl:text-lg bg-[#C21E56] hover:bg-[#c21e55e9]  text-white font-semibold px-4 py-2.5 lg:px-8  lg:py-3 xl:py-4 text-center border-none outline-none cursor-pointer'>ADD TO BAG</button>
+            <button onClick={() => { addToCart(id) }} className='w-48 xl:w-80 my-4 xl:my-5 rounded-md text-base xl:text-lg bg-[#C21E56] hover:bg-[#c21e55e9]  text-white font-semibold px-4 py-2.5 lg:px-8  lg:py-3 xl:py-4 text-center border-none outline-none cursor-pointer'>ADD TO BAG</button>
           </div>
 
           <div className="product-display-right-description flex flex-col text-base xl:text-lg gap-2 my-1 lg:my-5">
