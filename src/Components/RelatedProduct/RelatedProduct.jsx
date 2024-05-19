@@ -5,13 +5,12 @@ import Item from '../Item/Item'
 const RelatedProduct = () => {
 
   return (
-    <div className='related-Products h-10/12 flex flex-col items-center gap-2.5'>
+    <div className='new-collections h-5/6 flex flex-col  gap-1.5 lg:gap-2.5 mt-10 mb-8'>
+      <h1 className='text-[#171717]  text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium'>Related</h1>
 
-      <h1 className='text-5xl font-semibold text-[#171717]'>Related Product</h1>
+      <hr className='w-20 md:w-40 lg:w-48 xl:w-52 h-0.5 md:h-1 xl:h-1.5 mt-2 rounded-md bg-[#252525]' />
 
-      <hr className='w-[200px] h-[6px] bg-[#252525] rounded-md text-center' />
-
-      <div className='related-products-item mt-5 mb-20 md:grid grid-cols-4 gap-12 '>
+      <div className="collections  mt-2 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-4 lg:gap-5 xl:gap-8">
 
         {product_data.map((item) => {
 

@@ -11,7 +11,7 @@ const ProductDescription = () => {
         <div className="description-box-nav-box fade  text-base flex justify-center align-center border-[1px] py-3 px-5 bg-[#fbfbfb] text-[#555]">Reviews (122)</div>
       </div>
 
-      <div className="description-box-description flex flex-col gap-6 p-10 pb-5 border-[1px]">
+      <div className="description-box-description text-sm lg:text-lg flex flex-col gap-6 p-10 pb-5 border-[1px]">
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fugit rem? Fugiat, pariatur veritatis? Earum, quaerat? Laborum, aspernatur saepe ducimus minus similique odit unde? Veniam unde architecto expedita adipisci.</p>
 
