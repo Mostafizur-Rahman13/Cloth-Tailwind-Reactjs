@@ -80,9 +80,6 @@ const ProductDisplay = ({ product }) => {
 
           </div>
 
-          {/* <p className='product-display-right-category md:my-1 lg:my-2 '> <span className='font-semibold'>Category : </span>Woman,T-shirt, Crop-Top</p>
-
-          <p className='product-display-right-category'> <span className='font-semibold'>Tags : </span> Modern, Tranding, Latest</p> */}
         </div>
       </div >
     </div >

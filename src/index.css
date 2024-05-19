@@ -6,6 +6,10 @@
 
 @layer components {
 
+  .pointer {
+    @apply cursor-pointer
+  }
+
   .size-hover {
     @apply bg-slate-200 text-indigo-900 cursor-pointer hover:rounded-sm hover:text-white hover:ring-yellow-600 hover:bg-indigo-700 hover:shadow-md hover:shadow-red-600;
   }
@@ -14,8 +18,12 @@
     @apply py-0.5 px-2 lg:py-1 lg:px-2.5 xl:py-2 xl:px-4;
   }
 
+  .cart-responsive {
+    @apply text-base grid items-center justify-items-center grid-cols-[0.5fr_0.5fr_0.5fr_0.5fr_0.5fr_0.5fr] md:grid-cols-[0.5fr_2fr_0.5fr_0.5fr_0.5fr_0.5fr] xl:grid-cols-[0.5fr_1fr_1fr_1fr_1fr_1fr]
+  }
 
 }
+
 
 * {
   padding: 0;

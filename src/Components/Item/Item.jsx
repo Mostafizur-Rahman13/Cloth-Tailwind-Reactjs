@@ -8,7 +8,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
 
         <img className='w-[160px] md:w-[170px] lg:w-[220px] xl:w-[280px] hover:rounded-t-xl' src={image} alt="" />
 
-        <p className='my-1.5'>{name}</p>
+        <p className='my-1.5 text-[14px] lg:text-base'>{name}</p>
         <div className="item-price flex gap-5 justify-center">
           <div className="item-price-new text-[14px] md:text-base lg:text-lg xl:text-xl font-bold text-[#19176e]">
             $ - {new_price}
