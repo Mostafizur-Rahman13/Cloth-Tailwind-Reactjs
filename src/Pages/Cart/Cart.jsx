@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { StoreContext } from '../../Context/StoreContext'
-import remove_icon from '../../assets/cart_cross_icon.png'
 import all_product from '../../assets/all_product'
 import { useNavigate } from 'react-router-dom'
 

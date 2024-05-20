@@ -6,67 +6,61 @@ const PlaceOrder = () => {
   const { getTotalCartAmount } = useContext(StoreContext)
 
   return (
-    <form className='place-order' >
+    <form className='place-order w-11/12 md:w-10/12 flex flex-col md:flex-row  items-start sm:justify-between gap-12 mx-auto my-10' >
 
       <div className='place-order-left'>
 
-        <p className='title'>Delivery Information</p>
+        <p className='title text-3xl font-semibold'>Delivery Information</p>
 
-        <div className='multi-fields'>
-          <input type="text" placeholder='First name' />
-          <input type="text" placeholder='Last name' />
+        <div className='multi-fields flex gap-2.5'>
+          <input className='place-order-input' type="text" placeholder='First name' />
+          <input className='place-order-input' type="text" placeholder='Last name' />
         </div>
 
-        <input type="email" placeholder='Email' />
-        <input type="text" placeholder='Street' />
+        <input className='place-order-input' type="email" placeholder='Email' />
+        <input className='place-order-input' type="text" placeholder='Street' />
 
-        <div className='multi-fields'>
-          <input type="text" placeholder='City' />
-          <input type="text" placeholder='State' />
+        <div className='multi-fields flex gap-2.5'>
+          <input className='place-order-input' type="text" placeholder='City' />
+          <input className='place-order-input' type="text" placeholder='State' />
         </div>
 
-        <div className='multi-fields'>
-          <input type="text" placeholder='Zip code' />
-          <input type="text" placeholder='Country' />
+        <div className='multi-fields flex gap-2.5'>
+          <input className='place-order-input' type="text" placeholder='Zip code' />
+          <input className='place-order-input' type="text" placeholder='Country' />
         </div>
 
-        <input type="text" placeholder='Phone' />
+        <input className='place-order-input' type="text" placeholder='Phone' />
 
       </div>
 
 
 
-      <div className='place-order-right'>
+      <div className='place-order-right w-full md:w-3/6'>
 
-        <div className="cart-total">
+        <div className="cart-total flex flex-col gap-5">
 
-          <h2>Cart Totals</h2>
+          <h2 className='text-2xl font-bold'>Cart Totals</h2>
 
           <div>
-            <div className="cart-total-details">
-              <p>Sub total</p>
+            <div className="cart-total-details flex justify-between text-[#555]">
+              <p>Sub Total</p>
               <p>${getTotalCartAmount()}</p>
             </div>
-            <hr />
+            <hr className='my-2.5' />
 
-            <div className="cart-total-details">
+            <div className="cart-total-details flex justify-between text-[#555]">
               <p>Delivery Charge</p>
-              <p> ${getTotalCartAmount() === 0 ? 0 : 2}</p>
+              <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
             </div>
-            <hr />
+            <hr className='my-2.5' />
 
-            <div className="cart-total-details">
+            <div className="cart-total-details flex justify-between text-[#555]">
               <b>Grand Total</b>
               <b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</b>
             </div>
-
-            <div className="cart-total-details">
-              <b>Grand Total</b>
-              <b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</b>
-            </div>
-
           </div>
-          <button>Proceed To Payment</button>
+          <button onClick={() => navigator("/placeorder")} className='text-[white] bg-[#b847ff] hover:bg-[#9343c4] transition-[0.3s] w-[max(15vw,200px)] rounded cursor-pointer text-base py-3.5'>Proceed To Checkout</button>
         </div>
 
       </div>
