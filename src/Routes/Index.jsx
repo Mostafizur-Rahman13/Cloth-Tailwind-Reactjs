@@ -10,14 +10,15 @@ import Home from '../Pages/Home/Home'
 import men_banner from '../assets/banner_mens.png'
 import women_banner from '../assets/banner_women.png'
 import kids_banner from '../assets/banner_kids.png'
-import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
 import PlaceOrder from '../Pages/PlaceOrder/PlaceOrder'
+
 
 const Index = () => {
 
   const { login, SetShowLogin } = useState(false)
 
   return (
+
 
     < BrowserRouter >
 
